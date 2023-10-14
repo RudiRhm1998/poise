@@ -1,0 +1,14 @@
+F:\repos\poise\poise.api\poise\poise.data\bin\Debug\net7.0\poise.data.deps.json
+F:\repos\poise\poise.api\poise\poise.data\bin\Debug\net7.0\poise.data.runtimeconfig.json
+F:\repos\poise\poise.api\poise\poise.data\bin\Debug\net7.0\poise.data.dll
+F:\repos\poise\poise.api\poise\poise.data\bin\Debug\net7.0\poise.data.pdb
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.csproj.AssemblyReference.cache
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.GeneratedMSBuildEditorConfig.editorconfig
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.AssemblyInfoInputs.cache
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.AssemblyInfo.cs
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.csproj.CoreCompileInputs.cache
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.dll
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\refint\poise.data.dll
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.pdb
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\poise.data.genruntimeconfig.cache
+F:\repos\poise\poise.api\poise\poise.data\obj\Debug\net7.0\ref\poise.data.dll
