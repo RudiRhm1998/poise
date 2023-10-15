@@ -15,6 +15,7 @@
           "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": "7.0.12",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.12",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
+          "Microsoft.AspNetCore.SpaServices.Extensions": "7.0.12",
           "Microsoft.EntityFrameworkCore": "7.0.12",
           "Microsoft.EntityFrameworkCore.Design": "7.0.12",
           "Microsoft.NET.Build.Containers": "7.0.402",
@@ -189,6 +190,17 @@
           }
         }
       },
+      "Microsoft.AspNetCore.SpaServices.Extensions/7.0.12": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Physical": "7.0.0"
+        },
+        "runtime": {
+          "lib/net7.0/Microsoft.AspNetCore.SpaServices.Extensions.dll": {
+            "assemblyVersion": "7.0.12.0",
+            "fileVersion": "7.0.1223.47922"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore/7.0.12": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.12",
@@ -287,6 +299,14 @@
           "Microsoft.Extensions.Primitives": "7.0.0"
         }
       },
+      "Microsoft.Extensions.FileProviders.Physical/7.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "7.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "7.0.0",
+          "Microsoft.Extensions.Primitives": "7.0.0"
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/7.0.0": {},
       "Microsoft.Extensions.Hosting.Abstractions/7.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
@@ -808,6 +828,13 @@
       "path": "microsoft.aspnetcore.openapi/7.0.10",
       "hashPath": "microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.SpaServices.Extensions/7.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5V4fBpyKvOAkq/JhKqqnv+wXf4wjm0it6gtnGyuaE+fBruQK6TlLgyfqb/K7eHI+e4/IJ3akmHn2LE5KPz565Q==",
+      "path": "microsoft.aspnetcore.spaservices.extensions/7.0.12",
+      "hashPath": "microsoft.aspnetcore.spaservices.extensions.7.0.12.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore/7.0.12": {
       "type": "package",
       "serviceable": true,
@@ -905,6 +932,20 @@
       "sha512": "sha512-NyawiW9ZT/liQb34k9YqBSNPLuuPkrjMgQZ24Y/xXX1RoiBkLUdPMaQTmxhZ5TYu8ZKZ9qayzil75JX95vGQUg==",
       "path": "microsoft.extensions.fileproviders.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-K8D2MTR+EtzkbZ8z80LrG7Ur64R7ZZdRLt1J5cgpc/pUWl0C6IkAUapPuK28oionHueCPELUqq0oYEvZfalNdg==",
+      "path": "microsoft.extensions.fileproviders.physical/7.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2jONjKHiF+E92ynz2ZFcr9OvxIw+rTGMPEH+UZGeHTEComVav93jQUWGkso8yWwVBcEJGcNcZAaqY01FFJcj7w==",
+      "path": "microsoft.extensions.filesystemglobbing/7.0.0",
+      "hashPath": "microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Hosting.Abstractions/7.0.0": {
       "type": "package",

@@ -77,3 +77,4 @@ C:\repos\poise\poise.solution\poise.api\obj\Debug\net7.0\refint\poise.api.dll
 C:\repos\poise\poise.solution\poise.api\obj\Debug\net7.0\poise.api.pdb
 C:\repos\poise\poise.solution\poise.api\obj\Debug\net7.0\poise.api.genruntimeconfig.cache
 C:\repos\poise\poise.solution\poise.api\obj\Debug\net7.0\ref\poise.api.dll
+C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\Microsoft.AspNetCore.SpaServices.Extensions.dll

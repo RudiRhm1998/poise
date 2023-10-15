@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5+QGMM+smmvtGelADUe2H33rF02k4Hu0D+6ieysjVkVZq7iMB8eqdEQ78Zbr9X4Ju1mf0D9uAjGAKSVc0QgRhw==",
+  "dgSpecHash": "hUY/YLmaWzgpYUe4czpn8fITo5Vw2s8YmlWWXv17T49PpKb9Vbrrx4UMa67ghgYPupng1i45C77FZA4yRJaW7Q==",
   "success": true,
   "projectFilePath": "C:\\repos\\poise\\poise.solution\\poise.api\\poise.api.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.12\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.12.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\7.0.12\\microsoft.aspnetcore.spaservices.extensions.7.0.12.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.12\\microsoft.entityframeworkcore.7.0.12.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.12\\microsoft.entityframeworkcore.abstractions.7.0.12.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.12\\microsoft.entityframeworkcore.analyzers.7.0.12.nupkg.sha512",
@@ -34,6 +35,8 @@
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\7.0.0\\microsoft.extensions.fileproviders.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\7.0.0\\microsoft.extensions.fileproviders.physical.7.0.0.nupkg.sha512",
+    "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\7.0.0\\microsoft.extensions.filesystemglobbing.7.0.0.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\7.0.0\\microsoft.extensions.hosting.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.identity.core\\7.0.12\\microsoft.extensions.identity.core.7.0.12.nupkg.sha512",
     "C:\\Users\\RudyRohm\\.nuget\\packages\\microsoft.extensions.identity.stores\\7.0.12\\microsoft.extensions.identity.stores.7.0.12.nupkg.sha512",

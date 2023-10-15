@@ -1,4 +1,3 @@
-using System.Reflection;
 using Microsoft.OpenApi.Models;
 using poise.Middleware;
 using poise.Startup;
@@ -27,7 +26,15 @@ builder.Logging.AddSerilog(lc);
 builder.Services.AddControllers(x => { x.Filters.Add<ValidationErrorExceptionFilter>(); })
     .AddJsonOptions(o => { o.JsonSerializerOptions.PropertyNameCaseInsensitive = true; });
 
+builder.Services.AddSpaStaticFiles(c => { c.RootPath = "wwwroot/"; });
+
 builder.Services.AddControllers();
+
+DependencyInjectionModule.RegisterDatabase(builder.Services, builder.Configuration);
+DependencyInjectionModule.RegisterOptions(builder.Services, builder.Configuration);
+DependencyInjectionModule.RegisterServices(builder.Services, builder.Configuration);
+DependencyInjectionModule.RegisterValidationExceptionHandler(builder.Services, builder.Configuration);
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -46,6 +53,8 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+ExceptionMiddlewareModule.SetupExceptionHandler(app);
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -58,5 +67,20 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.MapWhen(x => x.Request.Path.Value != null && !x.Request.Path.Value.StartsWith("/api") && !x.Request.Path.Value.StartsWith("/.well-known"), builder =>
+{
+    builder.UseSpa(spa =>
+    {
+        if (app.Environment.IsDevelopment())
+        {
+            spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
+        }
+        else
+        {
+            spa.Options.SourcePath = "wwwroot/";
+        }
+    });
+});
 
 app.Run();
