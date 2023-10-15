@@ -1,0 +1,25 @@
+version: "3.9"
+name: 'poise'
+services:
+  database:
+    image: "postgres:15.3-alpine"
+    ports:
+      - '12651:5432'
+    environment:
+      POSTGRES_USER: poise
+      POSTGRES_PASSWORD: poise
+      POSTGRES_DB: poise
+  
+  traefik:
+    image: "traefik:v2.10"
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "traefik.enable=true"
+    ports:
+      - "80:80"
+      - "8080:8080"
+      - "443:443"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "./traefik.yml:/traefik.yml:ro"

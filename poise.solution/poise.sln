@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poise", "poise\poise.csproj", "{C60BBBE4-4F01-4679-A49E-0CD822360DAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poise.api", "poise.api\poise.api.csproj", "{C60BBBE4-4F01-4679-A49E-0CD822360DAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poise.data", "poise.data\poise.data.csproj", "{D2DDADE4-8377-47C8-8A82-3B4603CF760F}"
 EndProject

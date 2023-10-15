@@ -1,18 +1,21 @@
+using Microsoft.AspNetCore.DataProtection.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using poise.data.Users;
 
 namespace poise.data.Context;
 
-public class PoiseContext : DbContext
+public class PoiseContext : IdentityDbContext<User, IdentityRole<long>, long>
 {
-    public PoiseContext(DbContextOptions<PoiseContext> options) : base (options)
+    public PoiseContext(DbContextOptions options) : base (options)
     {
         
     }
 
-    protected override void OnModelCreating(ModelBuilder builder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(builder);
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<User>();
     }
-
-    public DbSet<WeatherForecast> WeatherForecasts { get; set; }
 }

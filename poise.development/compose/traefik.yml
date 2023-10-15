@@ -1,0 +1,36 @@
+global:
+  sendAnonymousUsage: false
+
+api:
+  insecure: true
+  dashboard: true
+
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+
+providers:
+  docker:
+    exposedbydefault: false
+    watch: true
+    endpoint: "unix:///var/run/docker.sock"
+  file:
+    filename: "traefik.yml"
+
+http:
+  routers:
+    web:
+      rule: "Host(`poise.localhost`)"
+      service: to-poise-portal
+      tls: true
+      entryPoints:
+        - websecure
+
+  services:
+    to-poise-portal:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:5244"
+
