@@ -1,11 +1,14 @@
 C:\repos\poise\poise.solution\poise.services\bin\Debug\net7.0\poise.services.deps.json
 C:\repos\poise\poise.solution\poise.services\bin\Debug\net7.0\poise.services.dll
 C:\repos\poise\poise.solution\poise.services\bin\Debug\net7.0\poise.services.pdb
+C:\repos\poise\poise.solution\poise.services\bin\Debug\net7.0\poise.data.dll
+C:\repos\poise\poise.solution\poise.services\bin\Debug\net7.0\poise.data.pdb
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.csproj.AssemblyReference.cache
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.GeneratedMSBuildEditorConfig.editorconfig
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.AssemblyInfoInputs.cache
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.AssemblyInfo.cs
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.csproj.CoreCompileInputs.cache
+C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.csproj.CopyComplete
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.dll
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\refint\poise.services.dll
 C:\repos\poise\poise.solution\poise.services\obj\Debug\net7.0\poise.services.pdb

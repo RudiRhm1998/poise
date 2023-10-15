@@ -1,11 +1,48 @@
+using System.Reflection;
+using Microsoft.OpenApi.Models;
+using poise.Middleware;
+using poise.Startup;
+using Serilog;
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.WebHost.ConfigureKestrel(k =>
+{
+    k.AddServerHeader = false;
+});
+
+builder.Logging.ClearProviders();
+var excludedLoggingContexts = new[]
+    { "Microsoft.AspNetCore.Hosting.Diagnostics", "Microsoft.AspNetCore.Mvc.Infrastructure" };
+var lc = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .WriteTo.Console(
+        outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] - {SourceContext}.{Method} - {Message:lj}{NewLine}{Exception}")
+    .Filter.ByExcluding(x =>
+        x.Properties.TryGetValue("SourceContext", out var sc) &&
+        excludedLoggingContexts.Any(x => sc.ToString().Contains(x)))
+    .CreateLogger();
+
+builder.Logging.AddSerilog(lc);
+
+builder.Services.AddControllers(x => { x.Filters.Add<ValidationErrorExceptionFilter>(); })
+    .AddJsonOptions(o => { o.JsonSerializerOptions.PropertyNameCaseInsensitive = true; });
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter a valid token",
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        BearerFormat = "JWT",
+        Scheme = "Bearer"
+    });
+
+    options.OperationFilter<AuthorizationOperationFilter>();
+});
 
 var app = builder.Build();
 

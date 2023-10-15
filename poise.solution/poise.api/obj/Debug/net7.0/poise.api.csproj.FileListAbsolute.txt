@@ -5,6 +5,9 @@ C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\poise.api.deps.json
 C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\poise.api.runtimeconfig.json
 C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\poise.api.dll
 C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\poise.api.pdb
+C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\FluentValidation.dll
+C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\Humanizer.dll
 C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\repos\poise\poise.solution\poise.api\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll

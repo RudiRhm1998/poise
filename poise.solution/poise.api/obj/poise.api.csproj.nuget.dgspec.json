@@ -47,6 +47,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -223,7 +231,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj": {
+                "projectPath": "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -236,6 +248,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -243,6 +263,10 @@
             "Microsoft.AspNetCore.DataProtection.Extensions": {
               "target": "Package",
               "version": "[7.0.12, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",

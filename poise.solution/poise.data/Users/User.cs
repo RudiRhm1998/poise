@@ -9,5 +9,7 @@ public class User : IdentityUser<long>
 	[MinLength(1)]
 	[MaxLength(256)]
 	public string DisplayName { get; set; }
-
+	public long? RoleId { get; set; }
+	public Role? Role { get; set; }
+	public bool MustResetPassword { get; set; }
 }

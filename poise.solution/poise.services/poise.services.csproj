@@ -7,11 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="7.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.Extensions" Version="7.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
     <PackageReference Include="Serilog.AspNetCore" Version="7.0.1-dev-00320" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.2" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\poise.data\poise.data.csproj" />
+  </ItemGroup>
+
+
+
 
 </Project>

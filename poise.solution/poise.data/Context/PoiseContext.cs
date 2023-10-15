@@ -12,6 +12,9 @@ public class PoiseContext : IdentityDbContext<User, IdentityRole<long>, long>
     {
         
     }
+    public DbSet<Role> AuthorizationRoles { get; set; }
+
+    public DbSet<RoleCheckResult> RoleCheckResults { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

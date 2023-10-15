@@ -4,14 +4,14 @@
     "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj": {}
   },
   "projects": {
-    "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj": {
+    "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
-        "projectName": "poise.services",
-        "projectPath": "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
+        "projectUniqueName": "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj",
+        "projectName": "poise.data",
+        "projectPath": "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj",
         "packagesPath": "C:\\Users\\RudyRohm\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\poise\\poise.solution\\poise.services\\obj\\",
+        "outputPath": "C:\\repos\\poise\\poise.solution\\poise.data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RudyRohm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,101 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.DataProtection": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.12, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
+        "projectName": "poise.services",
+        "projectPath": "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
+        "packagesPath": "C:\\Users\\RudyRohm\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\poise\\poise.solution\\poise.services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\RudyRohm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj": {
+                "projectPath": "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.7.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.DataProtection.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.12, )"
@@ -47,6 +142,10 @@
             "Microsoft.AspNetCore.DataProtection.Extensions": {
               "target": "Package",
               "version": "[7.0.12, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
