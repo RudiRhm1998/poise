@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj": {}
+    "F:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj": {}
   },
   "projects": {
-    "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj": {
+    "F:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj",
+        "projectUniqueName": "F:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj",
         "projectName": "poise.data",
-        "projectPath": "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj",
-        "packagesPath": "C:\\Users\\RudyRohm\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\poise\\poise.solution\\poise.data\\obj\\",
+        "projectPath": "F:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj",
+        "packagesPath": "C:\\Users\\Rudolph\\.nuget\\packages\\",
+        "outputPath": "F:\\repos\\poise\\poise.solution\\poise.data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\RudyRohm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rudolph\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,21 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj": {
+    "F:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
+        "projectUniqueName": "F:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
         "projectName": "poise.services",
-        "projectPath": "C:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
-        "packagesPath": "C:\\Users\\RudyRohm\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\poise\\poise.solution\\poise.services\\obj\\",
+        "projectPath": "F:\\repos\\poise\\poise.solution\\poise.services\\poise.services.csproj",
+        "packagesPath": "C:\\Users\\Rudolph\\.nuget\\packages\\",
+        "outputPath": "F:\\repos\\poise\\poise.solution\\poise.services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\RudyRohm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rudolph\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -111,8 +111,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj": {
-                "projectPath": "C:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj"
+              "F:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj": {
+                "projectPath": "F:\\repos\\poise\\poise.solution\\poise.data\\poise.data.csproj"
               }
             }
           }
@@ -176,7 +176,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
